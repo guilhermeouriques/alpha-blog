@@ -3,5 +3,6 @@ Rails.application.routes.draw do
 
   get "about", to: "pages#about"
 
-  resources :articles, only: %i[index show new create edit update] # [:index, :show]
+  # resources :articles, only: %i[index show new create edit update] # [:index, :show]
+  resources :articles
 end
